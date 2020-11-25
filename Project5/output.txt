@@ -1,0 +1,74 @@
+////////////////////////////
+/////    Base Tests    /////
+////////////////////////////
+
+Testing Base Default ctor
+Vehicle #1: Default-ctor
+
+Testing Base insertion operator
+Vehicle #1 @ [0, 0, 0]
+Base idgen: 1
+
+Testing Base Parametrized ctor
+Vehicle #99: Parameterized-ctor
+Vehicle #99 @ [39.54, 119.82, 4500]
+Base idgen: 1
+
+Testing Base Copy ctor
+Vehicle #2: Copy-ctor
+Vehicle #2 @ [39.54, 119.82, 4500]
+Base idgen: 2
+
+Testing Base Assignment operator
+Vehicle #1: Assignment
+Vehicle #1 @ [39.54, 119.82, 4500]
+Base idgen: 2
+
+Testing Base Move Function
+Vehicle #1: CANNOT MOVE - I DON'T KNOW HOW
+
+////////////////////////////
+/////   Derived Tests  /////
+////////////////////////////
+
+Testing Derived Default ctor
+Vehicle #3: Default-ctor
+Car #3: Default-ctor
+
+Testing Derived insertion operator
+Car #3 Plates: , Throttle: 0 @ [0, 0, 0]
+Derived idgen: 3
+
+Testing Derived Parametrized ctor
+Vehicle #999: Parameterized-ctor
+Car #999: Parameterized-ctor
+Car #999 Plates: Gandalf, Throttle: 0 @ [39.54, 119.82, 4500]
+Derived idgen: 3
+
+Testing Derived Copy ctor
+Vehicle #4: Default-ctor
+Car #4: Copy-ctor
+Car #4 Plates: Gandalf, Throttle: 0 @ [39.54, 119.82, 4500]
+Derived idgen: 4
+
+Testing Derived Assignment operator
+Car #3: Assignment
+Car #3 Plates: Gandalf, Throttle: 0 @ [39.54, 119.82, 4500]
+Derived idgen: 4
+
+Testing Derived Move Function
+Car #3: DRIVE to destination, with throttle @ 75
+
+////////////////////////////
+/////    Tests Done    /////
+////////////////////////////
+Car #4: Dtor
+Vehicle #4: Dtor
+Car #999: Dtor
+Vehicle #999: Dtor
+Car #3: Dtor
+Vehicle #3: Dtor
+Vehicle #2: Dtor
+Vehicle #99: Dtor
+Vehicle #1: Dtor
+

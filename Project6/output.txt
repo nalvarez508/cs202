@@ -1,0 +1,53 @@
+////////////////////////////////
+/////   Constructor Tests  /////
+////////////////////////////////
+
+Testing Derived Default ctor
+Vehicle: Default-ctor
+Car: Default-ctor
+
+Testing Derived Parametrized ctor
+Vehicle: Parameterized-ctor
+Car: Parameterized-ctor
+
+Testing Derived Copy ctor
+Vehicle: Default-ctor
+Car: Copy-ctor
+
+Testing Derived Assignment operator
+Car: Assignment
+
+/////////////////////////////////
+/////   Polymorphism Tests  /////
+/////////////////////////////////
+
+Testing VIRTUAL Move Function for DERIVED Class Objects
+Car: DRIVE to destination, with throttle @ 75
+
+Testing Insertion operator<< Overload for BASE Class Objects
+Car: Throttle: 0 @ [39.54, 119.82, 4500]
+
+///////////////////////////////////////////////////
+/////   Polymorphic Base Class Pointer Tests  /////
+///////////////////////////////////////////////////
+
+Testing VIRTUAL Move Function on Base Class Pointers
+Car: DRIVE to destination, with throttle @ 75
+Car: DRIVE to destination, with throttle @ 75
+Car: DRIVE to destination, with throttle @ 75
+
+Testing Insertion operator<< Overload for Base Class Pointers
+Car: Throttle: 75 @ [37.77, 122.42, 52]
+Car: Throttle: 75 @ [37.77, 122.42, 52]
+Car: Throttle: 75 @ [37.77, 122.42, 52]
+
+////////////////////////////
+/////    Tests Done    /////
+////////////////////////////
+Car: Dtor
+Vehicle: Dtor
+Car: Dtor
+Vehicle: Dtor
+Car: Dtor
+Vehicle: Dtor
+
